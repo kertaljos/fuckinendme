@@ -1,13 +1,103 @@
-<!DOCTYPE HTML>
-<BODY>
+<!DOCTYPE html>
+  <head>
+    <title>Erg</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <title>haha yeah man I wanna die...</title>
+  </head>
     
-<HEAD>
-    <title>Haha yeah man I wanna die</title>
-</HEAD>
+  <body>
 
-<h1>Hey man, wanna gimme some deth?</h1>
-<p>Woah this is a spooky place ay.</p>
-<br>
-<img src="ergII.PNG" alt="erg">    
-<p>erg</p>
-</BODY>
+    <header>
+      <div id="logo">
+        <a href="#">
+          <img src="erg-logo.png">
+          <h1>Erg</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+        </ul>
+      </nav>
+      <p><strong>Welcome to erg. I'm not sure what this is right now, however please enjoy your stay.</strong></p>
+    </header><br>
+    <section id="pageContent">
+      <main role="main">
+        <article>
+
+<h1>How much life do I have?</h1>
+            
+<p>How many hours are you a good little work slave? (work + commute)</p>
+    <br>
+
+<input type="text" id="workHours" value="null">
+
+
+<button onclick="wakingHoursCalc()">Calculate</button>
+  <br><br><br><br>
+
+<p id="result"></p>
+<p id="congrats"></p>
+
+    
+    
+    
+<script>
+function wakingHoursCalc() {
+    
+    //Setup//
+    var hours = document.getElementById("workHours").value;
+    document.getElementById("result").innerHTML = "You work for " + hours/16*100 + "% of your waking day, assuming you sleep for 8 hours.";
+    
+    if (hours == 8) {
+      
+        document.getElementById("congrats").innerHTML = "Congratulations. Assuming you get 8 hours sleep, this is an 8/8/8 day. Not ideal, but pretty much the best you can ask for right now.";
+ }
+    else if (hours > 8) {
+      
+        document.getElementById("congrats").innerHTML = "That's awful. Sorry to hear that. You have little quality of life, unless you live for your work.";
+      
+  }
+    
+    else if (hours < 8) {
+        
+        document.getElementById("congrats").innerHTML = "That's pretty good going!  You seem to have a decent work-life balance.";
+    }
+    
+    
+}
+</script>
+
+            
+            
+        </article>
+      </main>
+        
+        
+      <aside>
+        <div>
+          <h1>Assumptions</h1>
+          <p>&#8226; Input = full time that you do not have control of, from the moment you're forced to get up for work, to when you get home.</p><br> 
+            
+          <p>&#8226; If you go to other personal appointments which you consider your own free time in -between, you have removed this amount of time.</p><br>
+            
+          <p>&#8226; Time entered is in base 10. So 1hr 15m becomes 1.25 hours etc.</p><br>
+            
+          <p>&#8226; You have a standard day job.</p>
+        </div>
+
+      </aside>
+    </section>
+      
+      
+    <footer>
+      <p>
+        How's it goin' pal?
+      </p>
+
+        <a href="http://brackets.io/"><img src="madewith.gif" alt="Proudly made with Brackets"></a>
+
+    </footer>
+  </body>

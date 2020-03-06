@@ -1,0 +1,70 @@
+h1{font-family:fantasy;padding:0;margin:0;}
+h2{font-family:cursive;font-size: 18px;padding:0;margin:0;}
+p{font-family: sans-serif;}
+
+body {
+    background-image: url(erg-bg.png);
+    background-attachment: fixed;
+    background-size:100%;
+    background-position: center bottom;
+    line-height: 1;
+    font-family: Times New Roman, serif;
+    color: white;
+}
+
+header > nav {
+    float: right;
+}
+header > nav > ul{
+    list-style:none
+}
+
+
+body > footer, header, article, aside > div {
+    padding: 20px 30px;
+    max-width: 940px;
+    margin: auto;
+}
+
+#pageContent {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+main {
+    float: left;
+    width: 60%;
+}
+aside {
+    float: right;
+    width: 35%;
+}
+article {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+body > footer {
+    margin: auto;
+    clear: both;
+    font-style: italic;
+    font-size: 10pt;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+}
+#logo a {
+    text-decoration: none;
+}
+#logo h1 {
+    display: inline;
+    vertical-align: middle;
+    font-size: 30px;
+}
+#logo img {
+    width: 50px;
+    vertical-align: middle;
+}
